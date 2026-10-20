@@ -1,0 +1,16 @@
+#!bin/bash
+#purpose : task5 session
+#date : 19-10-2026
+
+echo "Installing java ..."
+yum install java-17-amazon-corretto-devel -y
+
+echo "installing tomcat10..."
+yum install tomcat10 -y
+
+echo "starting and enabling tomcat10..."
+systemctl start tomcat10
+systemctl enable tomcat10
+
+echo "cecking status..."
+systemctl status tomcat10

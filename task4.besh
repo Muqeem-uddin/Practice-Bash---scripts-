@@ -1,0 +1,17 @@
+#!bin/besh
+#purpose : task4
+#19-10-2026
+
+echo "updating the packages..."
+yum update -y
+
+
+echo "installing ..."
+yum install nginx -y
+
+echo "starting and enabling the nginx..."
+systemctl start nginx
+systemctl enable nginx
+
+echo "checking the status of nginx"
+systemctl status nginx

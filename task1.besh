@@ -1,0 +1,11 @@
+#!bin/besh
+#Purpose : 
+#Date : 18-10-2026
+
+if [ -d /root/muqeem/script ]
+then
+echo "directory exist"
+else
+echo "directory does not exist"
+fi
+

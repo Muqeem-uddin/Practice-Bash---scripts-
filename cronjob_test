@@ -1,0 +1,5 @@
+#bin/bash 
+#purpose : cronjob purpose
+#Date : 18:10:2026
+
+mkdir -p /root/muqeem/scripts/cronjob

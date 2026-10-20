@@ -1,0 +1,5 @@
+#!bin/bash
+#Purpose : task no.3
+#Date : 19-10-2026
+
+tar -cvf /root/muqeem/scripts_backup.tar.gz /root/muqeem/scripts

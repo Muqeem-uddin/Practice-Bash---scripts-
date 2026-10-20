@@ -1,0 +1,11 @@
+#!/bin/bash
+
+a=`date | awk '{print $1}'`
+
+if [ "$a" == Sat ]
+
+        then
+        echo Today is $a
+        else
+        echo Today is not Saturday
+fi

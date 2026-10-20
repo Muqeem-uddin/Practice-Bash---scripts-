@@ -1,0 +1,4 @@
+for i in eat run jump play
+do
+echo See Imran $i
+done

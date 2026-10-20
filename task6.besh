@@ -1,0 +1,24 @@
+#!bin/bash
+#purpose : practice to start the nginx if the service is stopped
+#date : 19-10-2026
+
+systemctl is-active --quiet nginx
+
+if [ $? -eq 0 ]
+
+then 
+
+echo "nginx is already running"
+
+else 
+
+echo "nginx is not running. start it now..."
+systemctl start nginx
+systemctl enable nginx
+
+echo "checking nginx status"
+systemctl status nginx
+
+echo "Nginx started successfully"
+
+fi
